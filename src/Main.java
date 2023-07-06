@@ -1,5 +1,5 @@
 public class Main {
-    public void main(String[] args){
+    public static void main(String[] args){
         Gryffindor[] gryffindors = {
                 new Gryffindor("Гарри Поттер",66,59, 91,66,44),
                 new Gryffindor("Гермиона Грейнджер",91,48, 88,92,66),
@@ -23,7 +23,13 @@ public class Main {
                 new Slytherin(" Грэхэм Монтегю",74,82, 66,28,66,22,16),
                 new Slytherin("Грегори Гойл",37,73, 44,83,29,77,23),
         };
-        System.out.println(" gjnkgjnkdnv");
+
+        PrintService printService = new PrintService();
+        printService.print(gryffindors);
+        printService.print(hufflepuffs);
+        printService.print(ravenclaws);
+        printService.print(slytherins);
+
 
 
     }
